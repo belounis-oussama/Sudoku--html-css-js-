@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/logo.png" type="image/icon type">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        
+        <title>Sudoku</title>
+    </head>
+    <body>
+        <!-- The header where there's the title and new game button-->
+        <div class="header">
+            <!-- Title -->
+            <p>Sudoku</p>
+            <!-- Icon -->
+            <div id="icon">
+                <img src="img/sudoku.png" alt="icon">
+            </div>
+            
+
+            <!-- New game button -->
+            <button type="button" value="Start" id="butt">Start</button>
+
+            <button type="button" value="Start" id="buttend">End Game</button>
+
+        </div>
+
+        <!-- A Line to separate between the header and the actual game-->
+        <hr>
+
+        <div class="actualgame">
+
+            <!-- Timer-->
+            
+            <div id="timerdiv"><p class="timner" id="timertext"></p><p class="timner"  id="timer"></p> </div>
+            <div id="containerins">
+            <div id="instructions">
+                
+                <p>♦ You can use only numbers from 1 to 9.</p>
+                <br>
+                <p>♦ Each 3×3 block can only contain numbers from 1 to 9.</p>
+                <br>
+                <p>♦ Each vertical column can only contain numbers from 1 to 9.</p>
+                <br>
+                <p>♦ Each horizontal row can only contain numbers from 1 to 9.</p>
+                <br>
+                <p>♦ Each number in the 3×3 block, vertical column or horizontal row can be used only once.</p>
+                <br>
+                <p>♦ Click the verify button after every entry</p>
+                <br>
+                <p>♦ The game is over when the whole Sudoku grid is correctly filled with numbers.</p>
+                
+            </div>
+
+            <img src="img/Instruction manual-rafiki(1).png" alt="Instruction manual" id="inst_img"/>
+
+        </div>
+            <!-- game -->
+            <table class="suduko" id="suduko">
+                <tr>
+                    <td ><input id="a00" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a01" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a02" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a03" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a04" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a05" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a06"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a07"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a08" type="number" max="9" min="1" step="1"></td>
+                </tr>
+                <tr>
+                    <td ><input id="a10" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a11" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a12" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a13" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a14" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a15" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a16"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a17"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a18" type="number" max="9" min="1" step="1"></td>
+                </tr>
+                <tr class="thirdrow">
+                    <td ><input id="a20" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a21" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a22" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a23" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a24" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a25" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a26"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a27"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a28" type="number" max="9" min="1" step="1"></td>
+                </tr>
+                <tr>
+                    <td ><input id="a30" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a31" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a32" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a33" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a34" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a35" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a36"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a37"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a38" type="number" max="9" min="1" step="1"></td>
+                </tr>
+                <tr>
+                    <td ><input id="a40" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a41" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a42" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a43" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a44" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a45" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a46"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a47"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a48" type="number" max="9" min="1" step="1"></td>
+                </tr>
+                <tr class="sixthrow">
+                    <td ><input id="a50" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a51" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a52" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a53" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a54" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a55" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a56"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a57"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a58" type="number" max="9" min="1" step="1"></td>
+                </tr>
+                <tr>
+                    <td ><input id="a60" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a61" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a62" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a63" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a64" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a65" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a66"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a67"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a68" type="number" max="9" min="1" step="1"></td>
+                </tr>
+                <tr>
+                    <td ><input id="a70" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a71" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a72" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a73" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a74" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a75" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a76"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a77"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a78" type="number" max="9" min="1" step="1"></td>
+                </tr>
+                <tr>
+                    <td ><input id="a80" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a81" type="number" max="9" min="1" step="1"></td>
+                    <td  class="thirdcolumn"><input id="a82" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a83" type="number" max="9" min="1" step="1"></td>
+                    <td ><input  id="a84" type="number" max="9" min="1" step="1"></td>
+                    <td  class="sixthcolumn"><input id="a85" type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a86"  type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a87"type="number" max="9" min="1" step="1"></td>
+                    <td ><input id="a88" type="number" max="9" min="1" step="1"></td>
+                </tr>
+            </table>
+            <button id="verifybtn">Verify</button>
+
+        </div>
+
+        <div class="footer">
+
+            
+        </div>
+
+        
+        <script src="js/main.js"></script>
+       
+    </body>
+   
+</html>

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+body{
+    background: #ede7e3;
+}
+.header{
+    max-height: 30vh;
+}
+.header p{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 0;
+    cursor: pointer;
+    top: 10%;
+    transform: translate(0, -10%);
+}
+.header #icon img{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 7%;
+    left: 43%;
+    transform: translate(-43%, -7%);
+    cursor: pointer;
+}
+hr{
+    border: 3px solid #16697a;
+    border-radius: 5px;
+    width: 90%;
+    top: 28%;
+    position: absolute;
+    margin-left: 5%;
+}
+
+
+#timerdiv
+{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    
+}
+
+#buttend{
+    background-color: #9b361d;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+    top: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+
+#buttend:hover{
+    
+    background: #d84f2d;
+}
+#butt{
+    background-color: #16697a;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: 15%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+#butt:hover{
+    
+    background: #0d5664;
+}
+
+
+.thirdrow{
+    border-bottom: 3px solid;
+}
+.sixthrow{
+    border-bottom: 3px solid;
+}
+.thirdcolumn{
+    border-right: 3px solid;
+}
+.sixthcolumn{
+    border-right: 3px solid;
+}
+
+
+table tr td{
+    border: 1px solid;
+    height: calc(100vh/20);
+    width: calc(100vh/20);
+    background-color: white;
+}
+table{
+    border-collapse: collapse;
+    display: block;
+    margin: 0 auto;
+}
+input {
+    border: none;
+    -moz-appearance: textfield; /*this is for hidding arrows from number input FIREFOX bsh*/
+    -webkit-appearance: textfield;/*this is for hidding arrows from number input other nav*/
+    margin: 0;
+    height: calc(100vh/20);
+    width: calc(100vh/20);
+    font-size: 5vh;
+    text-align: center;
+}
+
+input:invalid,
+.error{
+    border: 1px solid red; 
+    background-color: #df928e;
+}
+
+input[readonly] {
+    color: #023047;
+  }
+
+#verifybtn
+{
+    background-color: #16697a;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+    top: 120%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    border-radius: 5px;
+    cursor: pointer;
+    /*dont forget to style this btn */
+}
+#verifybtn:hover{
+    background: #0d5664;
+}
+.actualgame{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    max-height: 60vh;
+}
+.footer {
+    max-height: 10vh;
+}
+
+.timner
+{
+    color: #16697a;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    font-weight: 500;
+    
+} 
+.suduko{
+    display: none;
+}
+#instructions{
+    top: -10%;
+    transform: translate(0, 10%);
+    text-align: left;
+    font-size: 12px;
+    
+    
+}
+
+#containerins{
+    display: inline-flex;
+}
+
+#inst_img{
+    width: 50vh;
+    height:50vh ;
+}
+.win{
+    background-color: #57cc99;
+}
